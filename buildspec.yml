@@ -21,8 +21,8 @@ phases:
       - cp appspec.yml dist/$APP_NAME
       - cd dist/$APP_NAME
       - ls -la
-      - aws s3 sync . s3://prdpfirstbucket --delete
-# artifacts:
-#   files:
-#     - dist/**/*
-#   discard-paths: yes
+      # - aws s3 sync . s3://prdpfirstbucket --delete
+artifacts:
+  files:
+    - dist/**/*
+  discard-paths: yes
