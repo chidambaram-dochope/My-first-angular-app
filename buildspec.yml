@@ -22,7 +22,7 @@ phases:
       - cd dist/$APP_NAME
       - ls -la
       - aws s3 sync . s3://prdpfirstbucket --delete
-artifacts:
-  files:
-    - dist/**/*
-  discard-paths: yes
+# artifacts:
+#   files:
+#     - dist/**/*
+#   discard-paths: yes
